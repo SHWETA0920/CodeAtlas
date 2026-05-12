@@ -347,7 +347,7 @@ Open `backend/.env` and configure:
 # Groq (free) — get key at https://console.groq.com
 LLM_PROVIDER=groq
 LLM_MODEL=llama3-8b-8192
-GROQ_API_KEY=gsk_xxxxxxxxxxxxxxxxxxxx
+GROQ_API_KEY=your_groq_api_key_here
 
 # HuggingFace embeddings — FREE, no key needed
 EMBEDDING_PROVIDER=huggingface
@@ -365,7 +365,7 @@ USE_RERANKER=false
 
 # App
 FLASK_DEBUG=true
-SECRET_KEY=devbrain-local-dev
+SECRET_KEY=your_secret_key_here
 UPLOAD_DIR=./uploads
 ```
 
