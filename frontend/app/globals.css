@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-mono: 'Fira Code', 'Cascadia Code', 'JetBrains Mono', monospace;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: #0f172a; }
+::-webkit-scrollbar-thumb { background: #334155; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #475569; }
+
+/* Smooth scroll */
+html { scroll-behavior: smooth; }
+
+/* Code block styling */
+.code-block pre {
+  overflow-x: auto;
+  font-size: 0.8rem;
+  line-height: 1.6;
+}
+
+/* Prose in markdown answers */
+.answer-prose h1, .answer-prose h2, .answer-prose h3 {
+  color: #e2e8f0;
+  font-weight: 600;
+  margin-top: 1.25em;
+  margin-bottom: 0.5em;
+}
+.answer-prose p { margin-bottom: 0.75em; line-height: 1.7; }
+.answer-prose ul, .answer-prose ol {
+  padding-left: 1.5em;
+  margin-bottom: 0.75em;
+}
+.answer-prose li { margin-bottom: 0.25em; }
+.answer-prose code {
+  background: #1e293b;
+  color: #a5b4fc;
+  padding: 1px 5px;
+  border-radius: 3px;
+  font-size: 0.85em;
+  font-family: var(--font-mono);
+}
+.answer-prose a { color: #818cf8; text-decoration: underline; }
+
+/* Typing cursor blink */
+@keyframes blink { 0%, 100% { opacity: 1 } 50% { opacity: 0 } }
+.typing-cursor::after {
+  content: '▋';
+  display: inline-block;
+  animation: blink 1s step-end infinite;
+  color: #818cf8;
+  margin-left: 2px;
+}

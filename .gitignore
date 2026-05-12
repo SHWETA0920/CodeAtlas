@@ -1,0 +1,188 @@
+
+.env
+.env.*
+!.env.example
+!.env.local.example
+*.pem
+*.key
+*.cert
+secrets/
+
+
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+backend/venv/
+backend/.venv/
+
+# Byte-compiled / optimized files
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+*.pyo
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+*.egg
+.eggs/
+wheels/
+MANIFEST
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+*.cover
+coverage.xml
+nosetests.xml
+
+# Type checkers
+.mypy_cache/
+.dmypy.json
+.pytype/
+.pyre/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# pyinstaller
+*.spec
+
+
+
+
+# FAISS indexes (can be large, regenerated from source)
+backend/faiss_indexes/
+faiss_indexes/
+*.index
+*.index.meta
+*.meta.json
+
+# Uploaded project files
+backend/uploads/
+uploads/
+
+# HuggingFace model cache (downloaded at runtime)
+backend/.cache/
+.cache/
+~/.cache/huggingface/
+
+# Cloned repo temp dirs
+/tmp/devbrain_*
+
+
+
+
+# Dependencies
+frontend/node_modules/
+node_modules/
+
+# Next.js build output
+frontend/.next/
+.next/
+frontend/out/
+out/
+
+# Production build
+frontend/build/
+build/
+
+# Next.js cache
+frontend/.next/cache/
+.next/cache/
+
+# Vercel
+.vercel/
+
+# TypeScript build info
+*.tsbuildinfo
+next-env.d.ts
+
+
+
+# Docker volumes (local data)
+pgdata/
+docker-volumes/
+
+
+
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+
+# VS Code
+.vscode/
+!.vscode/extensions.json
+!.vscode/settings.json.example
+
+# JetBrains (PyCharm, WebStorm)
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+.idea_modules/
+
+# Vim / Emacs
+*.swp
+*.swo
+*~
+\#*\#
+.#*
+
+
+
+*.log
+*.log.*
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+pip-log.txt
+pip-delete-this-directory.txt
+
+
+yarn.lock
+pnpm-lock.yaml
+# keep: package-lock.json  ← intentionally NOT ignored
+
+*.tmp
+*.temp
+*.bak
+*.backup
+*.orig
+*.patch
+*.rej
+.sass-cache/
+.eslintcache
+.stylelintcache
+.parcel-cache/
+.turbo/
