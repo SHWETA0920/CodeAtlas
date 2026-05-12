@@ -1,4 +1,4 @@
-# DevBrain AI 🧠
+# CodeAtlas 🧠
 
 > **AI-powered codebase intelligence.** Drop any GitHub repo or upload project files — ask questions, debug, and understand the entire codebase instantly like a senior developer who has read every single file.
 
@@ -42,7 +42,7 @@ Every developer knows the pain of:
 - Debugging an issue that spans 5 different files across 3 modules
 - Trying to understand why a function exists and what it connects to
 
-**DevBrain AI solves all of this.**
+**CodeAtlas solves all of this.**
 
 You give it a GitHub repo URL or upload your project files. It reads, parses, and indexes the entire codebase using RAG (Retrieval-Augmented Generation). Then you can ask it anything in plain English — and it answers with full context, file references, and code snippets.
 
@@ -104,7 +104,7 @@ DevBrain uses **Tree-sitter** to split by actual code structure:
 "...def login_user(username, pas"   ← chunk boundary mid-function
 "sword):\n    user = db.query..."
 
-# ✅ DevBrain chunking (good)
+# ✅ CodeAtlas chunking (good)
 "def login_user(username, password):    ← entire function = one chunk
     user = db.query(User).filter(...)
     if not verify_password(...):
@@ -308,12 +308,12 @@ Best for development. Fastest to get started.
 
 ```bash
 # If you have the zip:
-unzip devbrain-ai.zip
-cd devbrain-ai
+unzip codeatlas.zip
+cd codeatlas
 
 # Or clone from GitHub:
-git clone https://github.com/your-username/devbrain-ai.git
-cd devbrain-ai
+git clone https://github.com/your-username/codeatlas.git
+cd codeatlas
 ```
 
 #### Step 2: Backend setup
@@ -434,7 +434,7 @@ Download: https://docker.com/products/docker-desktop
 #### Step 2: Configure environment
 
 ```bash
-cd devbrain-ai
+cd codeatlas
 cp backend/.env.example .env
 ```
 
