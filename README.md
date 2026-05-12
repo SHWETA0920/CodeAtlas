@@ -924,5 +924,5 @@ Built with:
 <div align="center">
   Made with ❤️ by developers, for developers
   <br/>
-  <strong>DevBrain AI — Because reading code shouldn't take weeks</strong>
+  <strong>CodeAtlas — Because reading code shouldn't take weeks</strong>
 </div>
